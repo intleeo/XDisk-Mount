@@ -49,7 +49,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     {
         if (wcscmp(argv[1], L"/m") == 0)
         {
-            system("net use X: \\\\10.16.129.56\\tools\\pack \"woshililei4613@\" /user:lilei-hj");
+            system("net use X: \\\\10.16.129.56\\tools\\pack \"password\" /user:adminname");
             PostQuitMessage(0);
         }
         else if (wcscmp(argv[1], L"/d") == 0)
@@ -90,7 +90,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
         switch (LOWORD(wParam))
         {
         case 1:
-            system("net use X: \\\\10.16.129.56\\tools\\pack \"woshililei4613@\" /user:lilei-hj");
+            system("net use X: \\\\10.16.129.56\\tools\\pack \"password\" /user:adminname");
             break;
         case 2:
             system("net use * /delete /y");
